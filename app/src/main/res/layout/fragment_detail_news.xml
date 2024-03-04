@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".DetailNews"
+    android:background="@color/black"
+    android:padding="8dp">
+
+
+    <TextView
+        android:id="@+id/td_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jess Cohen"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/td_published"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2024-02-22T04:41:09Z"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/td_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Wendy Williams' niece on why Williams says she is choosing to tell her story in doc - Good Morning America"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/td_author" />
+
+    <TextView
+        android:id="@+id/td_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Welcome to Australia, Travis Kelce.\r\nLocal outlets reported that the Kansas City Chiefs tight end officially landed in Sydney on Feb. 22 local time to support his girlfriend Taylor Swift, who's bring… [+914 chars]"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/td_title" />
+
+
+    <ImageView
+        android:id="@+id/td_imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="249dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/image1"
+        app:layout_constraintBottom_toTopOf="@+id/td_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/td_description" />
+
+    <TextView
+        android:id="@+id/td_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Travis Kelce landed in Australia to meet up with girlfriend Taylor Swift, who kicks off her first of four Eras Tour concerts in Sydney on Feb. 23."
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/td_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <TextView
+        android:id="@+id/td_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Eonline.com"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

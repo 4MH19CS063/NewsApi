@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="news_category">
+        <item>General</item>
+        <item>Entertainment</item>
+        <item>Business</item>
+        <item>Politics</item>
+        <item>Sports</item>
+        <item>Health</item>
+        <item>Science</item>
+        <item>Technology</item>
+    </string-array>
+</resources>
