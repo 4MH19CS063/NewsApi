@@ -32,7 +32,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text=" niece on why Williams says she is choosing to tell her story in doc - Good Morning America"
+        android:text=" Nisarga  niece on why Williams says she is choosing to tell her story in doc - Good Morning America"
         android:textColor="@color/white"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
