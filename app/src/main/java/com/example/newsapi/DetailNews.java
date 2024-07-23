@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 
 import androidx.fragment.app.Fragment;
 
+
 import com.example.newsapi.databinding.FragmentDetailNewsBinding;
 import com.squareup.picasso.Picasso;
 

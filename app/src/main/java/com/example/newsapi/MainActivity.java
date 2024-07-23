@@ -6,11 +6,9 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
-
-import com.example.newsapi.databinding.ActivityMainBinding;
+import android.util.Log;
 
 public class MainActivity extends AppCompatActivity {
-
 
 
     @Override
@@ -24,5 +22,7 @@ public class MainActivity extends AppCompatActivity {
         FragmentTransaction ft = fm.beginTransaction();
         ft.replace(R.id.frame,fragment);
         ft.commit();
+
+        Log.d("LOG to check shelve changes","shelve changes");
     }
 }

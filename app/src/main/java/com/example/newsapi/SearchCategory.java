@@ -14,6 +14,8 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 
 import com.example.newsapi.databinding.FragmentSearchCategoryBinding;
 
+import java.util.Objects;
+
 
 public class SearchCategory extends Fragment {
 
@@ -34,13 +36,13 @@ public class SearchCategory extends Fragment {
         binding.recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
 
 
-        CallApi.displayApiData(binding.recyclerView, binding.progress, "");
+//        CallApi.displayApiData(binding.recyclerView, binding.progress, "");
 
 //        spinner = view.findViewById(R.id.spinner);
 //        spinner.getBackground().setColorFilter(getResources().getColor(R.color.blue), PorterDuff.Mode.SRC_ATOP);
 
 
-        ArrayAdapter<CharSequence> spinnerArray = ArrayAdapter.createFromResource(getContext(), R.array.news_category, android.R.layout.simple_spinner_item);
+        ArrayAdapter<CharSequence> spinnerArray = ArrayAdapter.createFromResource(requireContext(), R.array.news_category, android.R.layout.simple_spinner_item);
         spinnerArray.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         binding.spinner.setAdapter(spinnerArray);
         binding.spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
